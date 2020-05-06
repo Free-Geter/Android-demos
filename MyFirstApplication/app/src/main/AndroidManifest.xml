@@ -11,7 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recyclerview.LinearRecyclerViewActivity"></activity>
+        <activity android:name=".Fragment.ContainerActivity"></activity>
+        <activity android:name=".CustomDialogActivity" />
+        <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".UIActivity" />
+        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".ToastActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".TimePicker_DatePicker.TimePickerActivity" />
+        <activity android:name=".recyclerview.LinearRecyclerViewActivity" />
         <activity android:name=".recyclerview.RecyclerViewActivity" />
         <activity android:name=".gridview.GridViewActivity" />
         <activity android:name=".listview.ListViewActivity" />
