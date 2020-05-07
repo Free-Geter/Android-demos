@@ -11,7 +11,7 @@ import com.example.myfirstapplication.Fragment.ContainerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mUI,mFragment;
+    private Button mUI,mFragment,mSharedPreference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
         mUI = findViewById(R.id.btn_UI);
         mFragment = findViewById(R.id.btn_Fragment);
+        mSharedPreference = findViewById(R.id.btn_SharedPreference);
 
         OnClick onClick = new OnClick();
 
         mUI.setOnClickListener(onClick);
         mFragment.setOnClickListener(onClick);
+        mSharedPreference.setOnClickListener(onClick);
     }
 
     class OnClick implements View.OnClickListener{
@@ -38,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_Fragment:
                     intent.setClass(MainActivity.this, ContainerActivity.class);
+                    break;
+                case R.id.btn_SharedPreference:
+                    intent.setClass(MainActivity.this,SharedPreferenceActivity.class);
                     break;
             }
             startActivity(intent);

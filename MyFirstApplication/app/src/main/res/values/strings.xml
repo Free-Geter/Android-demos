@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">My First Application</string>
     <string name="tv_test1">九天雷庭双脚蹬</string>
+    
+    <string name="user_name">117CARDS</string>
+    <string name="user_passwored">200046</string>
+    
+    <string name="login_preference">com.example.myfirstapplication_login_preference</string>
+    <string name="login_status">com.example.myfirstapplication_login_status_preference</string>
+    
 </resources>
