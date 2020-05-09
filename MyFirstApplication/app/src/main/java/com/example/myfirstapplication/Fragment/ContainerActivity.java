@@ -30,7 +30,7 @@ public class ContainerActivity extends AppCompatActivity implements Fragment_1.o
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 
-        if(findViewById(R.id.fl_Container1) != null){ //确认又一个Fragment容器
+        if(findViewById(R.id.fl_Container1) != null){ //确认有一个Fragment容器
 
             if(savedInstanceState != null){ //如果activity是resumed，再生成一个Fragment会覆盖原来的Fragment
                 return;

@@ -54,6 +54,7 @@ public class Fragment_1 extends Fragment {
         Activity activity = (Activity) context;
 
 
+        //使用onAttach方法传过来的context参数实例化接口，使用此接口内的函数在Fragment和Activity之间通信
         try {  //check实现接口是是否override了Read方法
             onMessageReader = (Fragment_1.onMessageReader) activity;
         }catch (ClassCastException e){

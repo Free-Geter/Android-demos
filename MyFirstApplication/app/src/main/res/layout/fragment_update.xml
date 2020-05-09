@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SQLite.AddContactFragment"
+    android:padding="10dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Contact Fragment"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_contact_id"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact_ID"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_contact_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"/>
+
+    <Button
+        android:id="@+id/btn_confirm_to_update"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Update"/>
+
+</RelativeLayout>

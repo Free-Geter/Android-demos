@@ -14,6 +14,8 @@ public class SuccessActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_success);
+
+        sharedPreferencesConfig = new SharedPreferencesConfig(getApplicationContext());
     }
 
     public void Logout(View view) {
