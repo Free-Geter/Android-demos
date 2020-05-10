@@ -8,11 +8,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.myfirstapplication.Fragment.ContainerActivity;
+import com.example.myfirstapplication.Room_Library.Container4RoomActivity;
 import com.example.myfirstapplication.SQLite.Container4SQLiteActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mUI,mFragment,mSharedPreference,mBtnSQLite;
+    private Button mUI,mFragment,mSharedPreference,mBtnSQLite,mBtnRoomLibrary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         mFragment = findViewById(R.id.btn_Fragment);
         mSharedPreference = findViewById(R.id.btn_SharedPreference);
         mBtnSQLite = findViewById(R.id.btn_SQLite);
+        mBtnRoomLibrary = findViewById(R.id.btn_Room_Library);
 
         OnClick onClick = new OnClick();
 
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mFragment.setOnClickListener(onClick);
         mSharedPreference.setOnClickListener(onClick);
         mBtnSQLite.setOnClickListener(onClick);
+        mBtnRoomLibrary.setOnClickListener(onClick);
     }
 
     class OnClick implements View.OnClickListener{
@@ -48,8 +51,10 @@ public class MainActivity extends AppCompatActivity {
                     intent.setClass(MainActivity.this,SharedPreferenceActivity.class);
                     break;
                 case R.id.btn_SQLite:
-                    intent.setClass(MainActivity.this, Container4SQLiteActivity.class);
+                    //intent.setClass(MainActivity.this, Container4SQLiteActivity.class);
                     break;
+                case R.id.btn_Room_Library:
+                    intent.setClass(MainActivity.this, Container4RoomActivity.class);
             }
             startActivity(intent);
         }

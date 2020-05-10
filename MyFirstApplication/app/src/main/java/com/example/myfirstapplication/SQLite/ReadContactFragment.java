@@ -37,6 +37,7 @@ public class ReadContactFragment extends Fragment {
             info = info +"\n\n ID : " + id + "\n NAME : " + name + "\n EMAIL : " + email;
         }
         mTv_show_info.setText(info);
+        cursor.close();
         contactDatabaseHelper.close();
     }
 
