@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UI_platformApplication</string>
+
+    <string-array name="fruit_name">
+        <item>apple</item>
+        <item>banana</item>
+    </string-array>
+
+</resources>
